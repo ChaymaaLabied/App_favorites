@@ -1,0 +1,199 @@
+// =======================
+// VARIABLES
+// =======================
+$color-podcast: #6e3bbf; // Violet Apple Podcast
+$color-notion: #4a4a4a; // Gris Notion
+$color-netflix: #e50914; // Rouge Netflix
+$color-bg: #f7f8fa;
+$color-text: #333;
+$color-text-light: #666;
+
+$font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+// =======================
+// BASE STYLES
+// =======================
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family;
+  background-color: $color-bg;
+  color: $color-text;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+// =======================
+// HEADER
+// =======================
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+
+  &__title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: $color-text;
+  }
+
+  &__nav {
+    &-list {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    // &-item {
+    //   /* Si besoin */
+    // }
+
+    &-link {
+      font-weight: bold;
+      color: $color-text;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $color-podcast;
+      }
+    }
+  }
+}
+
+// =======================
+// MAIN
+// =======================
+.apps__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+// =======================
+// APP CARD
+// =======================
+.app-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem 1.5rem 2.5rem;
+  width: 280px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  }
+
+  &__logo {
+    width: 80px;
+    margin-bottom: 1.2rem;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    margin-bottom: 0.7rem;
+    color: $color-text;
+  }
+
+  &__description {
+    font-size: 1rem;
+    color: $color-text-light;
+    margin-bottom: 1.8rem;
+    min-height: 3rem;
+  }
+
+  &__button {
+    display: inline-block;
+    padding: 0.6rem 1.6rem;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+    background-color: $color-text-light;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+
+    &:hover,
+    &:focus {
+      background-color: darken($color-text-light, 20%);
+      box-shadow: 0 7px 20px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  // Modificateurs
+  &--podcast {
+    border-top: 5px solid $color-podcast;
+
+    .app-card__button {
+      background-color: $color-podcast;
+
+      &:hover,
+      &:focus {
+        background-color: darken($color-podcast, 10%);
+      }
+    }
+  }
+
+  &--notion {
+    border-top: 5px solid $color-notion;
+
+    .app-card__button {
+      background-color: $color-notion;
+
+      &:hover,
+      &:focus {
+        background-color: darken($color-notion, 10%);
+      }
+    }
+  }
+
+  &--netflix {
+    border-top: 5px solid $color-netflix;
+
+    .app-card__button {
+      background-color: $color-netflix;
+
+      &:hover,
+      &:focus {
+        background-color: darken($color-netflix, 10%);
+      }
+    }
+  }
+}
+
+// =======================
+// FOOTER
+// =======================
+.footer {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: $color-text-light;
+
+  &__link {
+    color: $color-text-light;
+    font-weight: bold;
+
+    &:hover {
+      color: $color-netflix;
+    }
+  }
+}
