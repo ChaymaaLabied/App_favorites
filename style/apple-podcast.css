@@ -1,0 +1,160 @@
+body {
+  background: linear-gradient(120deg, #a18cd1 0%, #fbc2eb 100%);
+  background-attachment: fixed;
+  color: #333;
+}
+
+.apple {
+  font-family: "Inter", sans-serif;
+  background-color: #f4f4f7;
+  color: #1d1d1f;
+  text-align: center;
+  padding: 2rem;
+}
+.apple__header {
+  margin-bottom: 2rem;
+}
+.apple__header-btn {
+  display: inline-block;
+  margin: 1.5rem 2rem;
+  padding: 0.5rem 1.2rem;
+  color: #6e3bbf;
+  font-weight: 600;
+  border-radius: 30px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+}
+.apple__header-btn:hover {
+  background-color: #6e3bbf;
+  color: white;
+  transform: scale(1.05);
+}
+.apple__logo {
+  width: 120px;
+  margin: 2rem auto;
+  display: block;
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+.apple__logo:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+.apple__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.apple__slogan {
+  font-size: 1.2rem;
+  color: black;
+  margin-top: 0.5rem;
+}
+.apple__description {
+  margin: 2rem auto;
+  max-width: 600px;
+  font-size: 1rem;
+}
+.apple__description p {
+  margin-bottom: 1rem;
+}
+.apple__download-button {
+  background-color: #6e3bbf;
+  color: #ffffff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 30px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+.apple__download-button:hover {
+  background-color: #582f98;
+}
+.apple__screenshots {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.apple__img {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+.apple__img:hover {
+  transform: scale(1.05);
+}
+.apple__socials {
+  margin-top: 3rem;
+}
+.apple__socials p {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.apple__social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.apple__social-icon {
+  color: #6e3bbf;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.apple__social-icon:hover {
+  color: #4c2985;
+}
+.apple__footer {
+  margin-top: 4rem;
+  font-size: 0.9rem;
+  color: #67676e;
+}
+
+@media (max-width: 768px) {
+  .apple__screenshots {
+    flex-direction: column;
+    align-items: center;
+  }
+  .apple__img {
+    width: 80%;
+  }
+}
+.apple__carousel--loop {
+  overflow: hidden;
+  padding: 2rem 0;
+}
+.apple__carousel--loop .carousel__track {
+  display: flex;
+  gap: 1.5rem;
+  animation: scroll-carousel 40s linear infinite;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.apple__carousel--loop .carousel__track img {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+}
+@keyframes scroll-carousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 600px) {
+  .back-button {
+    display: block;
+    text-align: center;
+    margin: 1.5rem auto;
+  }
+}/*# sourceMappingURL=apple-podcast.css.map */

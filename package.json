@@ -1,0 +1,24 @@
+{
+  "name": "app_favorites",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass style/apple-podcast.scss style/apple-podcast.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChaymaaLabied/App_favorites.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChaymaaLabied/App_favorites/issues"
+  },
+  "homepage": "https://github.com/ChaymaaLabied/App_favorites#readme",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.89.2"
+  }
+}

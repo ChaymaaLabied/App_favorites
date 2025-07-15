@@ -1,0 +1,199 @@
+// =======================
+// VARIABLES
+// =======================
+$apple-purple: #6e3bbf;
+$apple-bg: #f4f4f7;
+$apple-dark: #1d1d1f;
+$apple-light: #ffffff;
+$apple-font: "Inter", sans-serif;
+$color-podcast: #6e3bbf;
+
+// =======================
+// BASE
+// =======================
+body {
+  background: linear-gradient(120deg, #a18cd1 0%, #fbc2eb 100%);
+  background-attachment: fixed;
+  color: #333;
+}
+
+.apple {
+  font-family: $apple-font;
+  background-color: $apple-bg;
+  color: $apple-dark;
+  text-align: center;
+  padding: 2rem;
+
+  &__header {
+    margin-bottom: 2rem;
+    &-btn {
+      display: inline-block;
+      margin: 1.5rem 2rem;
+      padding: 0.5rem 1.2rem;
+      color: $apple-purple;
+      font-weight: 600;
+      border-radius: 30px;
+      font-size: 1rem;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      text-decoration: none;
+
+      &:hover {
+        background-color: $apple-purple;
+        color: white;
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  &__logo {
+    width: 120px;
+    margin: 2rem auto;
+    display: block;
+    padding: 0.5rem;
+    background-color: white; // ou une couleur subtile
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  &__slogan {
+    font-size: 1.2rem;
+    color: darken($apple-dark, 20%);
+    margin-top: 0.5rem;
+  }
+
+  &__description {
+    margin: 2rem auto;
+    max-width: 600px;
+    font-size: 1rem;
+
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__download-button {
+    background-color: $apple-purple;
+    color: $apple-light;
+    padding: 0.7rem 1.5rem;
+    border-radius: 30px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s;
+    text-decoration: none;
+
+    &:hover {
+      background-color: darken($apple-purple, 10%);
+    }
+  }
+
+  &__screenshots {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+
+  &__img {
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  &__socials {
+    margin-top: 3rem;
+
+    p {
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+  }
+
+  &__social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  &__social-icon {
+    color: $apple-purple;
+    font-weight: bold;
+    transition: color 0.3s;
+
+    &:hover {
+      color: darken($apple-purple, 15%);
+    }
+  }
+
+  &__footer {
+    margin-top: 4rem;
+    font-size: 0.9rem;
+    color: lighten($apple-dark, 30%);
+  }
+}
+
+// =======================
+// RESPONSIVE
+// =======================
+@media (max-width: 768px) {
+  .apple__screenshots {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .apple__img {
+    width: 80%;
+  }
+}
+
+// effet slides deux
+.apple__carousel--loop {
+  overflow: hidden;
+  padding: 2rem 0;
+
+  .carousel__track {
+    display: flex;
+    gap: 1.5rem;
+    animation: scroll-carousel 40s linear infinite;
+    width: fit-content;
+
+    img {
+      width: 200px;
+      border-radius: 10px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      flex-shrink: 0;
+    }
+  }
+
+  @keyframes scroll-carousel {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}
+@media (max-width: 600px) {
+  .back-button {
+    display: block;
+    text-align: center;
+    margin: 1.5rem auto;
+  }
+}
