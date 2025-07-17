@@ -1,0 +1,120 @@
+.netflix {
+  font-family: "Inter", sans-serif;
+  background-color: black;
+  color: #ffffff;
+  text-align: center;
+  padding: 2rem;
+}
+.netflix__header {
+  margin-bottom: 2rem;
+}
+.netflix__header-btn {
+  display: inline-block;
+  margin: 1.5rem 2rem;
+  padding: 0.5rem 1.2rem;
+  color: #e50914;
+  font-weight: 600;
+  border: 1px solid #e50914;
+  border-radius: 30px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.netflix__header-btn:hover {
+  background-color: #e50914;
+  color: white;
+  transform: scale(1.05);
+}
+.netflix__logo {
+  width: 14rem;
+  margin: 0 auto;
+  display: block;
+}
+.netflix__slogan {
+  font-size: 1.2rem;
+  color: white;
+  margin-top: 0.5rem;
+}
+.netflix__description {
+  margin: 2rem auto;
+  max-width: 600px;
+  font-size: 1rem;
+}
+.netflix__description p {
+  margin-bottom: 1rem;
+}
+.netflix__download-button {
+  background-color: #e50914;
+  color: #ffffff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 30px;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+.netflix__download-button:hover {
+  background-color: #b40710;
+}
+.netflix__socials {
+  margin-top: 3rem;
+}
+.netflix__socials p {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.netflix__social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.netflix__social-icon {
+  color: #e50914;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.netflix__social-icon:hover {
+  color: #f95b63;
+}
+.netflix__footer {
+  margin-top: 4rem;
+  font-size: 0.9rem;
+  color: white;
+}
+.netflix__carousel--loop {
+  overflow: hidden;
+  padding: 2rem 0;
+}
+.netflix__carousel--loop .carousel__track {
+  display: flex;
+  gap: 1.5rem;
+  animation: scroll-carousel 40s linear infinite;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.netflix__carousel--loop .carousel__track img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+  flex-shrink: 0;
+  transition: transform 0.3s;
+}
+.netflix__carousel--loop .carousel__track img:hover {
+  transform: scale(1.05);
+}
+@keyframes scroll-carousel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .netflix__carousel--loop .carousel__track {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+}/*# sourceMappingURL=netflix.css.map */

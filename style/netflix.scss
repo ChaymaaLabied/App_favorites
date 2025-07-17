@@ -1,0 +1,153 @@
+// =======================
+// VARIABLES
+// =======================
+$netflix-red: #e50914;
+$netflix-black: black;
+$netflix-light: #ffffff;
+$netflix-font: "Inter", sans-serif;
+
+// =======================
+// BASE
+// =======================
+.netflix {
+  font-family: $netflix-font;
+  background-color: $netflix-black;
+  color: $netflix-light;
+  text-align: center;
+  padding: 2rem;
+
+  &__header {
+    margin-bottom: 2rem;
+
+    &-btn {
+      display: inline-block;
+      margin: 1.5rem 2rem;
+      padding: 0.5rem 1.2rem;
+      color: $netflix-red;
+      font-weight: 600;
+      border: 1px solid $netflix-red;
+      border-radius: 30px;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      text-decoration: none;
+
+      &:hover {
+        background-color: $netflix-red;
+        color: white;
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  &__logo {
+    width: 14rem;
+    margin: 0 auto;
+    display: block;
+  }
+
+  &__slogan {
+    font-size: 1.2rem;
+    color: lighten($netflix-light, 20%);
+    margin-top: 0.5rem;
+  }
+
+  &__description {
+    margin: 2rem auto;
+    max-width: 600px;
+    font-size: 1rem;
+
+    p {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__download-button {
+    background-color: $netflix-red;
+    color: $netflix-light;
+    padding: 0.7rem 1.5rem;
+    border-radius: 30px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s;
+    text-decoration: none;
+
+    &:hover {
+      background-color: darken($netflix-red, 10%);
+    }
+  }
+
+  &__socials {
+    margin-top: 3rem;
+
+    p {
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+    }
+  }
+
+  &__social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  &__social-icon {
+    color: $netflix-red;
+    font-weight: bold;
+    transition: color 0.3s;
+
+    &:hover {
+      color: lighten($netflix-red, 20%);
+    }
+  }
+
+  &__footer {
+    margin-top: 4rem;
+    font-size: 0.9rem;
+    color: lighten($netflix-light, 30%);
+  }
+
+  &__carousel--loop {
+    overflow: hidden;
+    padding: 2rem 0;
+
+    .carousel__track {
+      display: flex;
+      gap: 1.5rem;
+      animation: scroll-carousel 40s linear infinite;
+      width: fit-content;
+
+      img {
+        width: 15rem;
+        height: 15rem;
+        border-radius: 10px;
+        box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+        flex-shrink: 0;
+        transition: transform 0.3s;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+
+    @keyframes scroll-carousel {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+
+// =======================
+// RESPONSIVE
+// =======================
+@media (max-width: 768px) {
+  .netflix__carousel--loop .carousel__track {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+}

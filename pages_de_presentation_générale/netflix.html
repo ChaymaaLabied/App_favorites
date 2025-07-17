@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="stylesheet" href="../style/netflix.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="netflix">
+    <header class="netflix__header">
+      <a href="../index.html" class="netflix__header-btn"
+        >⬅ Retour à l’accueil</a
+      >
+      <img
+        src="../images/vecteur-de-logo-netflix-illustration-isolée-sur-le-fond-noir-fichier-modifiable-env-disponible-193529581.webp"
+        alt="Logo Netflix"
+        class="netflix__logo"
+      />
+      <p class="netflix__slogan">
+        Regardez ce que vous voulez, où vous voulez.
+      </p>
+    </header>
+
+    <main class="netflix__main">
+      <section class="netflix__description">
+        <p>
+          Netflix est la plateforme de streaming incontournable pour les films,
+          séries et documentaires. Profitez de contenus exclusifs et originaux,
+          sans publicité, à tout moment sur tous vos appareils.
+        </p>
+        <a
+          href="https://play.google.com/store/apps/details?id=com.netflix.mediaclient&hl=fr"
+          target="_blank"
+          class="netflix__download-button"
+          >Télécharger l’app</a
+        >
+      </section>
+
+      <section class="netflix__carousel--loop">
+        <div class="carousel__track">
+          <img
+            src="../images/netflix_images/photo1.png"
+            alt="Stranger Things"
+          />
+          <img src="../images/netflix_images/photo2.jpg" alt="The Witcher" />
+          <img src="../images/netflix_images/photo3.jpg" alt="Dark" />
+          <img src="../images/netflix_images/photo4.avif" alt="You" />
+          <img src="../images/netflix_images/photo5.jpg" alt="Wednesday" />
+          <img src="../images/netflix_images/photo6.webp" alt="Narcos" />
+          <!-- Duplicates pour boucle fluide -->
+          <img src="../images/netflix_images/photo2.jpg" alt="The Witcher" />
+          <img src="../images/netflix_images/photo3.jpg" alt="Dark" />
+          <img src="../images/netflix_images/photo4.avif" alt="You" />
+          <img src="../images/netflix_images/photo5.jpg" alt="Wednesday" />
+          <img src="../images/netflix_images/photo6.webp" alt="Narcos" />
+        </div>
+      </section>
+
+      <section class="netflix__socials">
+        <p>Suivez-nous :</p>
+        <div class="netflix__social-links">
+          <a
+            href="https://facebook.com/netflixfr"
+            target="_blank"
+            class="netflix__social-icon"
+            >Facebook</a
+          >
+          <a
+            href="https://twitter.com/netflixfr"
+            target="_blank"
+            class="netflix__social-icon"
+            >Twitter</a
+          >
+          <a
+            href="https://instagram.com/netflixfr"
+            target="_blank"
+            class="netflix__social-icon"
+            >Instagram</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <footer class="netflix__footer">
+      <p>&copy; 2025 Netflix, Inc. Tous droits réservés.</p>
+    </footer>
+  </body>
+</html>

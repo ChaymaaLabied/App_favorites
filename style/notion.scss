@@ -1,0 +1,136 @@
+$notion-black: #000000;
+$notion-white: #ffffff;
+$notion-gray: #f5f5f5;
+$notion-accent: #2f2f2f;
+$font: "Inter", sans-serif;
+
+.notion {
+  font-family: $font;
+  background-color: $notion-white;
+  color: $notion-black;
+  text-align: center;
+  padding: 2rem;
+
+  &__header {
+    margin-bottom: 2rem;
+
+    &-btn {
+      display: inline-block;
+      margin: 1.5rem 2rem;
+      padding: 0.5rem 1.2rem;
+      color: $notion-black;
+      border: 1px solid $notion-black;
+      border-radius: 30px;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: $notion-black;
+        color: $notion-white;
+      }
+    }
+  }
+
+  &__logo {
+    width: 100px;
+    margin: 1rem auto;
+    display: block;
+  }
+
+  &__title {
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
+
+  &__slogan {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+
+  &__description {
+    max-width: 600px;
+    margin: 0 auto 2rem;
+
+    p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__download-button {
+    background-color: $notion-black;
+    color: $notion-white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: darken($notion-black, 10%);
+    }
+  }
+
+  &__features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+
+    .feature {
+      background-color: $notion-gray;
+      border-radius: 10px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+
+      img {
+        width: 60px;
+        margin-bottom: 1rem;
+      }
+
+      h2 {
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        font-size: 0.95rem;
+        color: #444;
+      }
+    }
+  }
+
+  &__socials {
+    margin-top: 3rem;
+
+    p {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    &-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+
+    &-icon {
+      color: $notion-black;
+      text-decoration: underline;
+      font-weight: bold;
+
+      &:hover {
+        color: darken($notion-black, 30%);
+      }
+    }
+  }
+
+  &__footer {
+    margin-top: 4rem;
+    font-size: 0.9rem;
+    color: #777;
+  }
+}

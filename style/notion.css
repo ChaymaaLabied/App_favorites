@@ -1,0 +1,109 @@
+.notion {
+  font-family: "Inter", sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  padding: 2rem;
+}
+.notion__header {
+  margin-bottom: 2rem;
+}
+.notion__header-btn {
+  display: inline-block;
+  margin: 1.5rem 2rem;
+  padding: 0.5rem 1.2rem;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 30px;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.notion__header-btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+.notion__logo {
+  width: 100px;
+  margin: 1rem auto;
+  display: block;
+}
+.notion__title {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.notion__slogan {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+.notion__description {
+  max-width: 600px;
+  margin: 0 auto 2rem;
+}
+.notion__description p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.notion__download-button {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+.notion__download-button:hover {
+  background-color: black;
+}
+.notion__features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+.notion__features .feature {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+.notion__features .feature img {
+  width: 60px;
+  margin-bottom: 1rem;
+}
+.notion__features .feature h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.notion__features .feature p {
+  font-size: 0.95rem;
+  color: #444;
+}
+.notion__socials {
+  margin-top: 3rem;
+}
+.notion__socials p {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.notion__socials-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.notion__socials-icon {
+  color: #000000;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.notion__socials-icon:hover {
+  color: black;
+}
+.notion__footer {
+  margin-top: 4rem;
+  font-size: 0.9rem;
+  color: #777;
+}/*# sourceMappingURL=notion.css.map */

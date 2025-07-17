@@ -82,7 +82,8 @@ body {
   margin: 2rem 0;
 }
 .apple__img {
-  width: 200px;
+  width: 10rem;
+  height: 10rem;
   border-radius: 10px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
